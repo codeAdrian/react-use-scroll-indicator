@@ -1,5 +1,3 @@
-export as namespace ScrollIndicatorTypes;
-
 export type ScrollIndicatorInput = {
   onElement?: boolean;
   precision?: number;

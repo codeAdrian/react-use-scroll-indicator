@@ -1,5 +1,9 @@
 import { useRef, useState, useEffect, useMemo, useCallback } from 'react';
-import * as ScrollIndicatorTypes from './';
+import {
+  ScrollIndicatorHook,
+  ScrollIndicatorState,
+  ScrollIndicatorApi
+} from './types';
 
 import {
   VALUE_MIN,
@@ -10,9 +14,7 @@ import {
   INITIAL_VALUE
 } from './constants';
 
-export const useScrollIndicator: ScrollIndicatorTypes.ScrollIndicatorHook = (
-  options = {}
-) => {
+export const useScrollIndicator: ScrollIndicatorHook = (options = {}) => {
   const {
     onElement = INITIAL_ON_ELEMENT,
     precision = INITIAL_PRECISION,
@@ -57,12 +59,12 @@ export const useScrollIndicator: ScrollIndicatorTypes.ScrollIndicatorHook = (
     };
   }, []);
 
-  const state: ScrollIndicatorTypes.ScrollIndicatorState = {
+  const state: ScrollIndicatorState = {
     value,
     ...(onElement ? { targetElement } : null)
   };
 
-  const api: ScrollIndicatorTypes.ScrollIndicatorApi = useMemo(
+  const api: ScrollIndicatorApi = useMemo(
     () => ({
       activeListener: listener,
       setScrollState: handleValue
