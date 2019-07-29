@@ -1,6 +1,6 @@
 {
   "name": "react-use-scroll-indicator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook for creating scroll indicators",
   "main": "index.js",
   "types": "index.d.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeAdrian/repo"
+    "url": "git+https://github.com/codeAdrian/react-use-scroll-indicator"
   },
   "keywords": [
     "scroll",
@@ -24,9 +24,9 @@
   "author": "Adrian Bece <adrianbece.code@gmail.com> (https://codeAdrian.github.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codeAdrian/repo"
+    "url": "https://github.com/codeAdrian/react-use-scroll-indicator/issues"
   },
-  "homepage": "https://codeAdrian.github.io",
+  "homepage": "https://github.com/codeAdrian/react-use-scroll-indicator",
   "peerDependencies": {
     "react": ">=16.8.0"
   },
