@@ -1,9 +1,9 @@
 {
   "name": "react-use-scroll-indicator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React hook for creating scroll indicators",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
