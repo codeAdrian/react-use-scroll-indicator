@@ -39,17 +39,17 @@ export const useScrollIndicator: ScrollIndicatorHook = (options = {}) => {
   const handleElementScroll = useCallback(() => {
     const { height, top } = targetElement.current.getBoundingClientRect();
     handleValue(((top * -1) / height) * VALUE_MAX);
-  }, []);
+  }, [handleValue]);
 
   const handlePageScroll = useCallback(() => {
     const { scrollHeight, clientHeight, scrollTop } = document.documentElement;
     const winScroll = document.body.scrollTop || scrollTop;
     handleValue((winScroll / (scrollHeight - clientHeight)) * VALUE_MAX);
-  }, []);
+  }, [handleValue]);
 
   const listener = useMemo(
     () => (onElement ? handleElementScroll : handlePageScroll),
-    [onElement]
+    [onElement, handleElementScroll, handlePageScroll]
   );
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const useScrollIndicator: ScrollIndicatorHook = (options = {}) => {
     return function() {
       window.removeEventListener('scroll', listener);
     };
-  }, []);
+  }, [listener]);
 
   const state: ScrollIndicatorState = {
     value,
