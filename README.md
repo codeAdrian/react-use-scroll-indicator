@@ -1,6 +1,10 @@
-# React use-scroll-indicator hook
+# React useScrollIndicator hook
 
 Create your own scroll indicators using this simple, but very versatile hook.
+
+```
+[state, api] =  useScrollIndicator(options);
+```
 
 ## Simple Usage
 
