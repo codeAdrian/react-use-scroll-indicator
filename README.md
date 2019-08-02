@@ -1,5 +1,7 @@
 # React useScrollIndicator hook
 
+![npm](https://img.shields.io/npm/v/react-use-scroll-indicator)
+
 Create your own scroll indicators using this simple, but very versatile hook.
 
 ```
