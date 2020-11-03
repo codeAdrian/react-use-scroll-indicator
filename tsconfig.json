@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "rootDirs": ["src", "stories"],
+    "rootDirs": ["src"],
     "baseUrl": "src",
     "jsx": "react",
     "module": "commonjs",
@@ -11,5 +11,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "dist", ".storybook"]
+  "exclude": ["node_modules", "dist"]
 }
