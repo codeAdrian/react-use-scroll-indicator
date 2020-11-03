@@ -78,3 +78,15 @@ Hook returns the following variables and methods.
 | -------------- | ----------------------------------------- |
 | activeListener | Currently active scroll listener.         |
 | setScrollState | Method that sets the `value` of the hook. |
+
+## Issues and Contributions
+
+Feel free to [report issues](https://github.com/codeAdrian/gatsby-omni-font-loader/issues) you find and feel free to contribute to the project by creating Pull Requests.
+
+Contributions are welcome and appreciated!
+
+## Support
+
+The project is created and maintained by [Adrian Bece](https://codeadrian.github.io/) with the generous help of community contributors. If you have used the plugin and would like to contribute, feel free to [Buy Me A Coffee](https://www.buymeacoffee.com/ubnZ8GgDJ).
+
+<a href="https://www.buymeacoffee.com/ubnZ8GgDJ" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-red.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
